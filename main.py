@@ -51,7 +51,7 @@ class SentimentAnalysis:
             self.tweetText.append(self.cleanTweet(tweet.text).encode('utf-8'))
             # print (tweet.text.translate(non_bmp_map))    #print tweet's text
             analysis = TextBlob(tweet.text)
-            print("Tweet " + tweet.text + " :polarity: " + str(analysis.sentiment.polarity) + ".")
+            #print("Tweet " + tweet.text + " :polarity: " + str(analysis.sentiment.polarity) + ".")
             # print(analysis.sentiment)  # print tweet's polarity
             polarity += analysis.sentiment.polarity  # adding up polarities to find the average later
 
